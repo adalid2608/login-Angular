@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./app.component.scss">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <div class="container-img">
+      <img src="../assets/img/img_principal.png"/>
+      <span>Scopri il miglior corso di UX design!</span>
+    </div>
+    <div class="container-form">
+      <form class="form">
+        <h1 class="title">Registra il tuo account gratuito</h1>
+        <div class="form-control">
+          <!-- implementacion de input de los componentes de Angular Material -->
+          <mat-form-field class="input">
+            <input matInput placeholder="Label" type="text" class="label">
+            <!-- implementacion de icono desde los componentes de Angular Material -->
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="person" class="icono"></mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="form-control">
+          <!-- implementacion de input de los componentes de Angular Material -->
+          <mat-form-field class="input">
+            <input matInput placeholder="Il tuo indirizzo email" type="email" class="label">
+            <!-- implementacion de input de los componentes de Angular Material -->
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="mail" class="icono"></mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="form-control">
+          <!-- implementacion de input de los componentes de Angular Material -->
+          <mat-form-field class="input">
+            <input matInput placeholder="Scegli una password" type="password" class="label">
+            <!-- implementacion de input de los componentes de Angular Material -->
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="lock" class="icono"></mat-icon>
+          </mat-form-field>
+        </div>
+        <p class="terms">
+          Iscrivendoti confermi di aver letto e accettato i <br/><a>Termini e Condizioni</a> e la <a>Privacy Policy</a>
+        </p>
+        <!-- implementacion de boton desde los componentes de Angular Material -->
+          <button mat-raised-button color="warn" class="btn">Button</button>
+      </form>
+      <footer>
+        <p>Hai già un account? <br/> <a>Accedi ora</a></p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
+
+<router-outlet></router-outlet>
